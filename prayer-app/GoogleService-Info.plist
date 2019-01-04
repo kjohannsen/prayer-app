@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>699405669793-t746g52kmm8oe5i7ts32og9q8nq24029.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.699405669793-t746g52kmm8oe5i7ts32og9q8nq24029</string>
+	<key>API_KEY</key>
+	<string>AIzaSyA-8ofzPaKMWJ4lhodKKINmq1muRFa_i50</string>
+	<key>GCM_SENDER_ID</key>
+	<string>699405669793</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.KyleJohannsen.prayer-app</string>
+	<key>PROJECT_ID</key>
+	<string>prayr-6c9e6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>prayr-6c9e6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:699405669793:ios:c0fc821e13be9951</string>
+	<key>DATABASE_URL</key>
+	<string>https://prayr-6c9e6.firebaseio.com</string>
+</dict>
+</plist>
