@@ -14,6 +14,7 @@
 		5C89BAC421DEF87900041490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C89BAC321DEF87900041490 /* Assets.xcassets */; };
 		5C89BAC721DEF87900041490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C89BAC521DEF87900041490 /* LaunchScreen.storyboard */; };
 		5C89BAD421DEFA9A00041490 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C89BAD321DEFA9A00041490 /* GoogleService-Info.plist */; };
+		5CA2998421E136A300559331 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2998321E136A300559331 /* DataService.swift */; };
 		6D34316AFE0C8D8A2598B5D0 /* Pods_prayer_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9398D0464ABA86EF509D574 /* Pods_prayer_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		5C89BAC621DEF87900041490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C89BAC821DEF87900041490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C89BAD321DEFA9A00041490 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5CA2998321E136A300559331 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		A160123EC6D60CB74071228B /* Pods-prayer-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prayer-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-prayer-app/Pods-prayer-app.debug.xcconfig"; sourceTree = "<group>"; };
 		D04605C01D473289FCC2052F /* Pods-prayer-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prayer-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-prayer-app/Pods-prayer-app.release.xcconfig"; sourceTree = "<group>"; };
 		F9398D0464ABA86EF509D574 /* Pods_prayer_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prayer_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +123,7 @@
 		5C89BAD221DEF99100041490 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5CA2998321E136A300559331 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				5C89BABF21DEF86800041490 /* SecondViewController.swift in Sources */,
 				5C89BABB21DEF86800041490 /* AppDelegate.swift in Sources */,
 				5C89BABD21DEF86800041490 /* FirstViewController.swift in Sources */,
+				5CA2998421E136A300559331 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
