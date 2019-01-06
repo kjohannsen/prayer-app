@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cfs-1O-YnM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="360"/>
         </scene>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="v5M-bV-mQY">
             <objects>
-                <viewController id="pyT-5o-WwE" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="pyT-5o-WwE" customClass="LoginVC" customModule="prayer_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aV2-2t-Yc9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -98,22 +98,6 @@
                                 <color key="textColor" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRh-Wj-eY1">
-                                <rect key="frame" x="37.5" y="281" width="300" height="50"/>
-                                <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="G36-Fx-8nn"/>
-                                    <constraint firstAttribute="height" constant="50" id="wih-u9-OrA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6o-53-YoQ">
-                                <rect key="frame" x="48" y="341" width="279" height="30"/>
-                                <state key="normal" title="Don't have an account? Create one here."/>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="y77-wp-Hxf">
                                 <rect key="frame" x="37.5" y="152" width="300" height="99"/>
                                 <subviews>
@@ -154,6 +138,29 @@
                                     <constraint firstAttribute="width" constant="300" id="wKC-z4-cVu"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRh-Wj-eY1">
+                                <rect key="frame" x="37.5" y="281" width="300" height="50"/>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="G36-Fx-8nn"/>
+                                    <constraint firstAttribute="height" constant="50" id="wih-u9-OrA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6o-53-YoQ">
+                                <rect key="frame" x="48" y="341" width="279" height="30"/>
+                                <state key="normal" title="Don't have an account? Create one here."/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGN-9B-Ccy">
+                                <rect key="frame" x="109" y="379" width="157" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IbB-Iq-5Pb"/>
+                                </constraints>
+                                <state key="normal" title="Forgot your password?"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -162,8 +169,10 @@
                             <constraint firstItem="iRh-Wj-eY1" firstAttribute="top" secondItem="y77-wp-Hxf" secondAttribute="bottom" constant="30" id="MOn-GK-Rkb"/>
                             <constraint firstItem="Tlp-CD-fdX" firstAttribute="centerX" secondItem="aV2-2t-Yc9" secondAttribute="centerX" id="VNd-bU-56c"/>
                             <constraint firstItem="h6o-53-YoQ" firstAttribute="centerX" secondItem="aV2-2t-Yc9" secondAttribute="centerX" id="cwO-gs-QdB"/>
+                            <constraint firstItem="LGN-9B-Ccy" firstAttribute="top" secondItem="h6o-53-YoQ" secondAttribute="bottom" constant="8" id="dzV-h4-tCi"/>
                             <constraint firstItem="y77-wp-Hxf" firstAttribute="top" secondItem="Tlp-CD-fdX" secondAttribute="bottom" constant="30" id="iib-KR-XGx"/>
                             <constraint firstItem="Tlp-CD-fdX" firstAttribute="top" secondItem="GF6-OW-19W" secondAttribute="top" constant="60" id="xHg-Xe-1L7"/>
+                            <constraint firstItem="LGN-9B-Ccy" firstAttribute="centerX" secondItem="aV2-2t-Yc9" secondAttribute="centerX" id="zTk-0c-mEo"/>
                             <constraint firstItem="iRh-Wj-eY1" firstAttribute="centerX" secondItem="aV2-2t-Yc9" secondAttribute="centerX" id="zWW-aA-0Ya"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GF6-OW-19W"/>
@@ -173,10 +182,10 @@
             </objects>
             <point key="canvasLocation" x="-1623.2" y="-3.1484257871064472"/>
         </scene>
-        <!--View Controller-->
+        <!--Create AccountVC-->
         <scene sceneID="flp-Bm-Dj6">
             <objects>
-                <viewController id="Cfs-1O-YnM" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateAccountVC" id="Cfs-1O-YnM" customClass="CreateAccountVC" customModule="prayer_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JDk-at-dZt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

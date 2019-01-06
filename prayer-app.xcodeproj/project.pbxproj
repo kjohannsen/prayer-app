@@ -15,6 +15,10 @@
 		5C89BAC721DEF87900041490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C89BAC521DEF87900041490 /* LaunchScreen.storyboard */; };
 		5C89BAD421DEFA9A00041490 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5C89BAD321DEFA9A00041490 /* GoogleService-Info.plist */; };
 		5CA2998421E136A300559331 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2998321E136A300559331 /* DataService.swift */; };
+		5CA2998621E298CE00559331 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2998521E298CE00559331 /* LoginVC.swift */; };
+		5CA2998821E298EE00559331 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2998721E298EE00559331 /* CreateAccountVC.swift */; };
+		5CA2998A21E299C700559331 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2998921E299C700559331 /* InsetTextField.swift */; };
+		5CA2998C21E29E6900559331 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CA2998B21E29E6900559331 /* AuthService.swift */; };
 		6D34316AFE0C8D8A2598B5D0 /* Pods_prayer_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9398D0464ABA86EF509D574 /* Pods_prayer_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,10 @@
 		5C89BAC821DEF87900041490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5C89BAD321DEFA9A00041490 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5CA2998321E136A300559331 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		5CA2998521E298CE00559331 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		5CA2998721E298EE00559331 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		5CA2998921E299C700559331 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		5CA2998B21E29E6900559331 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A160123EC6D60CB74071228B /* Pods-prayer-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prayer-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-prayer-app/Pods-prayer-app.debug.xcconfig"; sourceTree = "<group>"; };
 		D04605C01D473289FCC2052F /* Pods-prayer-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-prayer-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-prayer-app/Pods-prayer-app.release.xcconfig"; sourceTree = "<group>"; };
 		F9398D0464ABA86EF509D574 /* Pods_prayer_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_prayer_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +103,8 @@
 			children = (
 				5C89BABC21DEF86800041490 /* FirstViewController.swift */,
 				5C89BABE21DEF86800041490 /* SecondViewController.swift */,
+				5CA2998521E298CE00559331 /* LoginVC.swift */,
+				5CA2998721E298EE00559331 /* CreateAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -109,6 +119,7 @@
 		5C89BAD021DEF90A00041490 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5CA2998921E299C700559331 /* InsetTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -124,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				5CA2998321E136A300559331 /* DataService.swift */,
+				5CA2998B21E29E6900559331 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -266,8 +278,12 @@
 			files = (
 				5C89BABF21DEF86800041490 /* SecondViewController.swift in Sources */,
 				5C89BABB21DEF86800041490 /* AppDelegate.swift in Sources */,
+				5CA2998821E298EE00559331 /* CreateAccountVC.swift in Sources */,
 				5C89BABD21DEF86800041490 /* FirstViewController.swift in Sources */,
 				5CA2998421E136A300559331 /* DataService.swift in Sources */,
+				5CA2998A21E299C700559331 /* InsetTextField.swift in Sources */,
+				5CA2998621E298CE00559331 /* LoginVC.swift in Sources */,
+				5CA2998C21E29E6900559331 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
