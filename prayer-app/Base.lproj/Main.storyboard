@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Cfs-1O-YnM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -149,10 +149,16 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="pyT-5o-WwE" eventType="touchUpInside" id="sHE-Sa-lUe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6o-53-YoQ">
                                 <rect key="frame" x="48" y="341" width="279" height="30"/>
                                 <state key="normal" title="Don't have an account? Create one here."/>
+                                <connections>
+                                    <action selector="createAccountButtonPressed:" destination="pyT-5o-WwE" eventType="touchUpInside" id="ybx-BS-ZGH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGN-9B-Ccy">
                                 <rect key="frame" x="109" y="379" width="157" height="30"/>
@@ -160,6 +166,9 @@
                                     <constraint firstAttribute="height" constant="30" id="IbB-Iq-5Pb"/>
                                 </constraints>
                                 <state key="normal" title="Forgot your password?"/>
+                                <connections>
+                                    <action selector="forgotPasswordButtonPressed:" destination="pyT-5o-WwE" eventType="touchUpInside" id="4pX-rJ-dwS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -177,6 +186,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GF6-OW-19W"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="z3R-IH-IdH" id="E1k-zI-8Tm"/>
+                        <outlet property="passwordTextField" destination="Uvl-6x-1vY" id="ugt-s5-QWz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iii-Xq-o2I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -247,6 +260,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountButtonPressed:" destination="Cfs-1O-YnM" eventType="touchUpInside" id="lZ0-4i-ZWv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZg-Ix-Yp4">
                                 <rect key="frame" x="25" y="20" width="28" height="28"/>
@@ -255,6 +271,9 @@
                                     <constraint firstAttribute="height" constant="28" id="zJQ-P7-g7U"/>
                                 </constraints>
                                 <state key="normal" image="closeButton"/>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="Cfs-1O-YnM" eventType="touchUpInside" id="gel-CI-8qQ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -270,6 +289,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cmJ-KQ-EHn"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="D2J-bj-cNm" id="k4Y-9X-C0z"/>
+                        <outlet property="passwordTextField" destination="eVz-h9-Dss" id="aFH-4Z-ogJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7to-dY-Pwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
