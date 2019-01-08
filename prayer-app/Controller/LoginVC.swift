@@ -24,6 +24,15 @@ class LoginVC: UIViewController {
     // MARK: Actions
     
     @IBAction func loginButtonPressed(_ sender: Any) {
+        if emailTextField.text != nil && passwordTextField != nil {
+            AuthService.instance.loginUser(withEmail: emailTextField.text!, andPassword: passwordTextField.text!) { (success, loginError) in
+                if success {
+                    // ???
+                } else {
+                    print(String(describing: loginError?.localizedDescription))
+                }
+            }
+        }
     }
     
     @IBAction func createAccountButtonPressed(_ sender: Any) {

@@ -26,6 +26,15 @@ class CreateAccountVC: UIViewController {
     // MARK: - Actions
     
     @IBAction func createAccountButtonPressed(_ sender: Any) {
+        if emailTextField.text != nil && passwordTextField.text != nil {
+            AuthService.instance.registerUser(withEmail: emailTextField.text!, andPassword: passwordTextField.text!) { (success, registrationError) in
+                if success {
+                    self.dismiss(animated: true, completion: nil)
+                } else {
+                    print(String(describing: registrationError?.localizedDescription))
+                }
+            }
+        }
     }
     
     @IBAction func closeButtonPressed(_ sender: Any) {
